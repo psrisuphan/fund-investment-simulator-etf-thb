@@ -112,8 +112,8 @@ st.subheader("📉 กราฟเปรียบเทียบเงินต�
 fig, ax = plt.subplots(figsize=(10, 5))
 
 # เส้นเงินลงทุนสะสม
-ax.plot(df.index, df["ลงทุนสะสม (THB)"], label="💸 เงินลงทุนสะสม", color='blue')
-ax.plot(df.index, df["ปันผลสะสม (THB)"], label="💵 ปันผลสะสม", color='green')
+ax.plot(df.index, df["ลงทุนสะสม (THB)"], label="Accumulated Investment", color='blue')
+ax.plot(df.index, df["ปันผลสะสม (THB)"], label="Accumulated Return", color='green')
 
 # เพิ่มจุด Peak + ข้อความ
 ax.plot(max_invest_month, max_invest, 'bo')  # จุดสีฟ้า
@@ -123,9 +123,9 @@ ax.plot(max_dividend_month, max_dividend, 'go')  # จุดสีเขีย�
 ax.text(max_dividend_month, max_dividend, f"{max_dividend:,.0f} ฿", color='green', fontsize=9, ha='left')
 
 # ตั้งค่ากราฟ
-ax.set_xlabel("เดือน")
-ax.set_ylabel("มูลค่า (บาท)")
-ax.set_title("เงินต้นสะสมเทียบกับปันผลสะสม (THB)")
+ax.set_xlabel("Month")
+ax.set_ylabel("Amount (THB)")
+ax.set_title("Accumulated Principal vs Accumulated Return (THB)")
 ax.legend()
 ax.grid(True)
 
