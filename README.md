@@ -1,5 +1,7 @@
 # 📈 Fund Investment Simulator (USB/THB)
 
+web-app : https://fund-investment-simulator.streamlit.app/
+
 **[AI Generated]**
 
 A Streamlit web app that simulates monthly investments (DCA) into a dividend-paying ETF or mutual fund, with customizable parameters like:
