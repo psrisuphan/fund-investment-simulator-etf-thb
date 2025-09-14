@@ -94,7 +94,7 @@ with col2:
 
 # --- กราฟเพิ่มเติม ---
 # ตั้งค่าฟอนต์ให้รองรับภาษาไทย
-matplotlib.rcParams['font.family'] = ['Tahoma', 'sans-serif']
+#matplotlib.rcParams['font.family'] = ['Tahoma', 'sans-serif']
 
 # เพิ่มคอลัมน์ปันผลสะสม
 df["ปันผลสะสม (THB)"] = df["ปันผลหลังหัก (THB)"].cumsum()
