@@ -12,10 +12,10 @@ st.title("📈 Fund Investment Simulator (default JEPQ : Sun 14 Sep)")
 # 🔢 รับค่าจากผู้ใช้
 initial_invest_thb = Decimal(st.number_input("💰 เงินต้นเริ่มต้น (THB)", min_value=0, value=4500))
 months = st.slider("📅 ระยะเวลาลงทุน (เดือน)", 1, 240, 12)
-dca_price = Decimal(st.number_input("💵 เงิน DCA(บาท/เดือน)", min_value=0, value=2000))
+dca_price = Decimal(st.number_input("💵 เงิน DCA (บาท/เดือน)", min_value=0, value=2000))
 
 # --- รับค่าคงที่จากผู้ใช้ ---
-exchange_rate = Decimal(st.number_input("💱 อัตราแลกเปลี่ยน (USD → THB)", min_value=0.0, value=31.72, format="%.2f"))
+exchange_rate = Decimal(st.number_input("💱 อัตราแลกเปลี่ยน (USD → THB)(*หมายเหตุ : ค่าธรรมเนียมแลกเปลี่ยน +-0.1)", min_value=0.0, value=31.72, format="%.2f"))
 price_per_unit_usd = Decimal(st.number_input("🏷️ ราคาต่อหน่วยกองทุน (USD)", min_value=0.0, value=56.54, format="%.2f"))
 dividend_per_unit_usd = Decimal(st.number_input("💵 ปันผลต่อหน่วย (USD)", min_value=0.0, value=0.45, format="%.2f"))
 withholding_tax = Decimal('0.15')  # ภาษีคงที่ 15%
