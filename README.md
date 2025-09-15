@@ -46,8 +46,7 @@ Please consult a licensed financial advisor before making investment decisions.
 
 ## 📄 License
 
-This project is released under the [MIT License](https://opensource.org/license/MIT)
-, with the restriction that <b>🚫commercial usage is prohibited.</b>
+This project is released under the [MIT License](https://opensource.org/license/MIT).
 
 ## 🛠️ Tech Stack
 
