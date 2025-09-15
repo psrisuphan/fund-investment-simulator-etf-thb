@@ -89,12 +89,10 @@ with col1:
     st.metric("💸 เงินต้นรวมที่ลงทุน", f"{total_invested_thb:,.2f} บาท")
     st.metric("📈 หน่วยกองทุนสะสม", f"{total_units:.6f} หน่วย")
 with col2:
-    st.metric("💰 ปันผลรวมก่อนภาษี (USD/THB)", f"{total_gross_dividend_usd:.2f} USD / {total_gross_dividend_thb:,.2f}")
-    st.metric("🧾 ปันผลสุทธิ (USD/THB)", f"{total_net_dividend_usd:,.2f} USD / {total_net_dividend_thb:,.2f} บาท")
+    st.metric("💰 ปันผลรวมก่อนภาษี (USD/THB)", f"{total_gross_dividend_usd:.2f} / {total_gross_dividend_thb:,.2f}")
+    st.metric("🧾 ปันผลสุทธิ (USD/THB)", f"{total_net_dividend_usd:,.2f} / {total_net_dividend_thb:,.2f}")
 
 # --- กราฟเพิ่มเติม ---
-# ตั้งค่าฟอนต์ให้รองรับภาษาไทย
-matplotlib.rcParams['font.family'] = ['sans-serif']
 
 # เพิ่มคอลัมน์ปันผลสะสม
 df["ปันผลสะสม (THB)"] = df["ปันผลหลังหัก (THB)"].cumsum()
