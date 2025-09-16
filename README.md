@@ -1,4 +1,4 @@
-# 📈 Fund Investment Simulator USD and THB.
+# 📈 Fund Investment Simulator US-ETF in THB.
 
 web-app : https://fund-investment-simulator.streamlit.app/
 
