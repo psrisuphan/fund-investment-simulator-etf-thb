@@ -1,4 +1,4 @@
-# 📈 Fund Investment Simulator (USB/THB)
+# 📈 Fund Investment Simulator USD and THB.
 
 web-app : https://fund-investment-simulator.streamlit.app/
 
